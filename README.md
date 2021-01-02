@@ -9,14 +9,14 @@ _Nodemailer mail service with TypeScript._
     /subscribe/
     JSON Input:
         {
-            "username": "Your Recipient Name",
+            "fullName": "Your Recipient Name",
             "email": "Your Recipient Email"
         }
     Success Response:
             "Thank you!😊",
     Failure Response: (Status 409 Conflict)
         {
-           "message": Hey user, You have already subscribed!
+           "message": "Hey user, You have already subscribed!",
            "success": false
         }
 ```
