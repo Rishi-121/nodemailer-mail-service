@@ -13,7 +13,7 @@ export const mailer = async (req: any) => {
   });
 
   await ejs.renderFile(
-    "../sendgrid-mail-service/src/views/mail.ejs",
+    "../nodemailer-mail-service/src/views/mail.ejs",
     {
       user: req.body.fullName,
     },
