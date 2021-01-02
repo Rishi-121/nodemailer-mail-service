@@ -6,17 +6,23 @@ _Nodemailer mail service with TypeScript._
 
 ```json
   POST Request:
-    /register-user/
+    /subscribe/
     JSON Input:
         {
             "username": "Your Recipient Name",
             "email": "Your Recipient Email"
         }
-    Success Response: 
-            "message": ""Thank you!😊"",
+    Success Response:
+            "Thank you!😊",
     Failure Response: (Status 409 Conflict)
         {
            "message": Hey user, You have already subscribed!
            "success": false
         }
+```
+
+**_Local Run_**
+
+```javascript
+ npm start
 ```
